@@ -9,11 +9,15 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MyOwnCustomMaterialModule } from "./material.module";
 import { FlexLayoutModule } from "@angular/flex-layout";
 
+// Layouts
+import { MainComponent } from "./layouts/main/main.component";
+
 // Páginas
 import { HomeComponent } from "./pages/home/home.component";
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, MainComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
