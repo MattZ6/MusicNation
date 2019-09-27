@@ -1,7 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+@import '~@angular/material/theming';
+@include mat-core();
+
+$primary: mat-palette($mat-red);
+$accent: mat-palette($mat-green);
+$warn: mat-palette($mat-red);
+$theme: mat-light-theme($primary, $accent, $warn);
+$config: mat-typography-config();
+
+@include angular-material-theme($theme);
 
 * {
   outline: 0;
@@ -24,7 +33,7 @@ html,
 body,
 input,
 button {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 button {

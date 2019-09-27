@@ -15,9 +15,10 @@ import { MainComponent } from "./layouts/main/main.component";
 // Páginas
 import { HomeComponent } from "./pages/home/home.component";
 import { HeaderComponent } from './components/header/header.component';
+import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, MainComponent, HeaderComponent],
+  declarations: [AppComponent, HomeComponent, MainComponent, HeaderComponent, LoginLayoutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
